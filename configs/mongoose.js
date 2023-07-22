@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1/Polling_System');
+// Code for using the cloud mongodb atlas 
+const connectParams={
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}
 
-//mongoose.connect('mongodb+srv://harshalsgore:Harshal123@cluster0.uucjlco.mongodb.net/');
+mongoose.connect('mongodb://127.0.0.1/Polling_System');
 
 const db = mongoose.connection
 
