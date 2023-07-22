@@ -3,7 +3,7 @@ const express=require('express')
 const bodyParser=require('body-parser')
 const app=express();
 app.use(express.urlencoded());
-const db=require('./configs/mongoose');
+const db = require('./configs/mongoose');
 
 app.use('/',require('./routes/index'));
    
