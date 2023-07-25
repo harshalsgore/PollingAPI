@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1/Polling_System');
+mongoose.connect('mongodb+srv://harshalsgore:YLWXQoTvv7T5RphA@cluster0.uucjlco.mongodb.net/Poling-API?retryWrites=true&w=majority');
 
 const db = mongoose.connection
 
